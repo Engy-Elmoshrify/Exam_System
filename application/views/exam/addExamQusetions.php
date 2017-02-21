@@ -11,6 +11,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- Bootstrap -->
 <link href="/testNewsCI/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <link href="/testNewsCI/css/bootstrap.css" rel='stylesheet' type='text/css' />
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!--[if lt IE 9]>
@@ -93,24 +94,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <?php echo form_open('exam/addExamQusetions/1'); ?>    
     <table>
         <tr>
+          <div class="form-group">
             <td><label for="Q_Name">Question</label></td>
-            <td><input type="input" name="Q_Name" size="50" /></td>
+            <td><input class="form-control" id="inputdefault" type="input" name="Q_Name" size="50" /></td>
+        </div>
         </tr>
         <tr>
             <td><label for="A1_Name">First Answer</label></td>
-            <td><input type="input" name="A1_Name" size="50" /></td>
+            <td><input class="form-control" id="inputdefault" type="input" name="A1_Name" size="50" /></td>
         </tr>
         <tr>
             <td><label for="A2_Name">Second Answer</label></td>
-            <td><input type="input" name="A2_Name" size="50" /></td>
+            <td><input class="form-control" id="inputdefault" type="input" name="A2_Name" size="50" /></td>
         </tr>
         <tr>
             <td><label for="A3_Name">Third Answer</label></td>
-            <td><input type="input" name="A3_Name" size="50" /></td>
+            <td><input class="form-control" id="inputdefault" type="input" name="A3_Name" size="50" /></td>
         </tr>
          <tr>
             <td><label for="A4_Name">Fourth Answer</label></td>
-            <td><input type="input" name="A4_Name" size="50" /></td>
+            <td><input class="form-control" id="inputdefault" type="input" name="A4_Name" size="50" /></td>
         </tr>
         <tr>
             <td></td>

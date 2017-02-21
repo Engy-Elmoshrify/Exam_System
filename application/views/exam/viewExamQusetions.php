@@ -55,14 +55,14 @@ echo '<h2>'.$exams_item['Exam_Name'].'</h2>';
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="<?php echo site_url('/'); ?>">Home</a></li>
             <li class="active"><a href="technology.html">Technologies</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href=<?php echo site_url('about.html'); ?>>About</a></li>
+            <li><a href=<?php echo site_url('blog.html'); ?>>Blog</a></li>
       
-            <li><a href="user.html">Users</a></li>
-            <li><a href="login-template.html">Login</a></li>
-            <li><a href="signup-template.html">Sign Up</a></li>
+            <li><a href=<?php echo site_url('User'); ?>>Users</a></li>
+            <li><a href=<?php echo site_url('login'); ?>>Login</a></li>
+            <li><a href=<?php echo site_url('User/signup'); ?>>Sign Up</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
         <!-- start soc_icons -->
