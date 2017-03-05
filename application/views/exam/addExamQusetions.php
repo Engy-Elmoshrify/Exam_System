@@ -34,12 +34,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="logo navbar-left">
       <h1><a href="index.html">Learner </a></h1>
     </div>
-    <div class="h_search navbar-right">
-      <form>
-        <input type="text" class="text" value="Enter text here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter text here';}">
-        <input type="submit" value="search">
-      </form>
-    </div>
+    
     <div class="clearfix"></div>
   </div>
   <div class="row h_menu">
@@ -57,10 +52,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="technology.html">Technologies</a></li>
+            <li ><a href="technology.html">Exams</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
             <li><a href="user.html">Users</a></li>
             <li><a href="login-template.html">Login</a></li>
             <li><a href="signup-template.html">Sign Up</a></li>
@@ -95,49 +88,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <table>
         <tr>
           <div class="form-group">
-            <td><label for="Q_Name">Question</label></td>
+            <td><p> <h5><label for="Q_Name">Question</label></p> </h5></td>
             <td><input class="form-control" id="inputdefault" type="input" name="Q_Name" size="50" /></td>
         </div>
         </tr>
         <tr>
-            <td><label for="A1_Name">First Answer</label></td>
+            <td><p> <h5><label for="A1_Name">First Answer</label></p> </h5></td>
             <td><input class="form-control" id="inputdefault" type="input" name="A1_Name" size="50" /></td>
         </tr>
         <tr>
-            <td><label for="A2_Name">Second Answer</label></td>
+            <td><p> <h5><label for="A2_Name">Second Answer</label></p> </h5></td>
             <td><input class="form-control" id="inputdefault" type="input" name="A2_Name" size="50" /></td>
         </tr>
         <tr>
-            <td><label for="A3_Name">Third Answer</label></td>
+            <td><p> <h5><label for="A3_Name">Third Answer</label></p> </h5></td>
             <td><input class="form-control" id="inputdefault" type="input" name="A3_Name" size="50" /></td>
         </tr>
          <tr>
-            <td><label for="A4_Name">Fourth Answer</label></td>
+            <td><p> <h5><label for="A4_Name">Fourth Answer</label></p> </h5></td>
             <td><input class="form-control" id="inputdefault" type="input" name="A4_Name" size="50" /></td>
         </tr>
         <tr>
             <td></td>
-            <td><input type="submit" name="submit" value="Next Question" /></td>
+            <td></td>
+<td></td>
+            <td>
+
+              <input class="btn btn-success" type="submit" name="submit" value="Next Question" /></td>
         </tr>
     </table>    
-     <a href="<?php echo site_url('exam'); ?>">Finish</a>
+     <a class="btn btn-info" href="<?php echo site_url('exam'); ?>">Finish</a>
 </form>
 
 
-    
-      <ul class="pagination">
-        <li><a href="#">&laquo;</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">&raquo;</a></li>
-      </ul>
-      <div class="alert alert-warning alert-dismissable">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        <strong>Warning!</strong> Better check yourself, you're not looking too good.
-      </div>
+      
     </div>
   </div>
 </div><!-- end main -->
@@ -145,7 +129,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <div class="container">
     <div class="row  footer">
       <div class="copy text-center">
-        <p class="link"><span>&#169; All rights reserved | Design by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
+        <p class="link"><span>&#169; All rights reserved </span></p>
       </div>
     </div>
   </div>

@@ -36,12 +36,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="logo navbar-left">
             <h1><a href="index.html">Learner </a></h1>
         </div>
-        <div class="h_search navbar-right">
-            <form>
-                <input type="text" class="text" value="Enter text here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter text here';}">
-                <input type="submit" value="search">
-            </form>
-        </div>
+       
         <div class="clearfix"></div>
     </div>
     <div class="row h_menu">
@@ -59,10 +54,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="technology.html">Technologies</a></li>
+                <li class="active"><a href="technology.html">Exams</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="user.html">Users</a></li>
                 <li><a href="login-template.html">Login</a></li>
                 <li><a href="signup-template.html">Sign Up</a></li>
@@ -92,11 +85,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           <h2><?php echo $title; ?></h2>
  
 <table id = "exam_tb" class="table table-striped table-bordered" border='1' cellpadding='0'>
+   <thead>
     <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Description</strong></td>
-        <td><strong>Action</strong></td>
+        <th><strong>Name</strong></th>
+        <th><strong>Description</strong></th>
+        <th><strong>Action</strong></th>
     </tr>
+</thead>
+    <tbody>
+
 <?php foreach ($exams as $exams_item): ?>
         <tr>
             <td><?php echo $exams_item['Exam_Name']; ?></td>
@@ -108,6 +105,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </td>
         </tr>
 <?php endforeach; ?>
+</tbody>
 </table>
  
             
@@ -118,19 +116,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
 
-            <ul class="pagination">
-              <li><a href="#">&laquo;</a></li>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#">&raquo;</a></li>
-            </ul>
-            <div class="alert alert-warning alert-dismissable">
-              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-              <strong>Warning!</strong> Better check yourself, you're not looking too good.
-            </div>
+          
         </div>
     </div>
 </div><!-- end main -->
@@ -138,12 +124,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="container">
         <div class="row  footer">
             <div class="copy text-center">
-                <p class="link"><span>&#169; All rights reserved | Design by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
+                <p class="link"><span>&#169; All rights reserved </span></p>
             </div>
         </div>
     </div>
 </div>
 
+
+
+<script src="//code.jquery.com/jquery-1.12.4.js"  type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"  type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"  type="text/javascript"></script>
 <script type="text/javascript">
 $(document).ready(function() {
     $('#exam_tb').DataTable();

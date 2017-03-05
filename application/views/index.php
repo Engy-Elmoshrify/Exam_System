@@ -68,12 +68,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="logo navbar-left">
 			<h1><a href="">Examy</a></h1>
 		</div>
-		<div class="h_search navbar-right">
-			<form>
-				<input type="text" class="text" value="Enter text here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter text here';}">
-				<input type="submit" value="search">
-			</form>
-		</div>
+		
 		<div class="clearfix"></div>
 	</div>
 </div>
@@ -94,10 +89,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		        <li class="active"><a href="#">Home</a></li>
-		        <li><a href="technology.html">Technologies</a></li>
+		        <li><a href="technology.html">Exams</a></li>
 		        <li><a href="about.html">About</a></li>
-		        <li><a href="blog.html">Blog</a></li>
-		        <li><a href="contact.html">Contact</a></li>
 		        <li><a href="user.html">Users</a></li>
 		        <li><a href="login.html">Login</a></li>
 		        <li><a href="signup.html">Sign Up</a></li>
@@ -122,17 +115,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="da-slide">
 				<h2>Online Tests</h2>
 				<p>Take online exams through an easy way and get your results immediately ..<span class="hide_text"></span></p>
-				<h3 class="da-link"><a href="single-page.html" class="fa-btn btn-1 btn-1e">view more</a></h3>
+		
 			</div>
 			<div class="da-slide">
 				<h2>Online Certificates</h2>
 				<p>Validating educationl certificates after passing required exams .. <span class="hide_text"> </span></p>
-				<h3 class="da-link"><a href="single-page.html" class="fa-btn btn-1 btn-1e">view more</a></h3>
 			</div>
 			<div class="da-slide">
 				<h2>Free Registeration</h2>
 				<p>Register now for free and enjoy joining our technical world .. <span class="hide_text"></span></p>
-				<h3 class="da-link"><a href="single-page.html" class="fa-btn btn-1 btn-1e">view more</a></h3>
+				
 			</div>
 	   </div>
 	</div>
@@ -142,27 +134,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="main row">
 			<div class="col-md-3 images_1_of_4 text-center">
 				<span class="bg"><i class="fa fa-globe"></i></span>
-				<h4><a href="#">Sed Porta Dolor</a></h4>
-				<p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 1500s.</p>
-				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+				<h4><a href="#">International customers</a></h4>
+				<p class="para">For our international students, registering for classroom courses is simple.  </p>
+				<a href="branch/international" class="fa-btn btn-1 btn-1e">read more</a>
 			</div>
 			<div class="col-md-3 images_1_of_4 bg1 text-center">
 				<span class="bg"><i class="fa fa-laptop"></i></span>
-				<h4><a href="#">Lorem Ipsum is</a></h4>
-				<p class="para">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+				<h4><a href="#">Refund & Exchange policy</a></h4>
+				<p class="para">Return/Refund Policy for Distance Learning Certifications and<br>  Products</p>
+				
+				<a href="branch/refund" class="fa-btn btn-1 btn-1e">read more</a>
 			</div>
-			<div class="col-md-3 images_1_of_4 bg1 text-center">
+				
+
+<div class="col-md-3 images_1_of_4 bg1 text-center">
 				<span class="bg"><i class="fa fa-cog"></i></span>
-				<h4><a href="#">Sed Porta Dolor</a></h4>
-				<p class="para">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32  by H. Rackham.</p>
-				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+				<h4><a href="#">Membership <br></a></h4>
+				<p class="para"><br>Together we can develop the solutions that our world needs to prosper into the future..</p>
+				<a href="branch/membership" class="fa-btn btn-1 btn-1e">read more</a>
 			</div>		
+
 			<div class="col-md-3 images_1_of_4 bg1 text-center">
 				<span class="bg"><i class="fa fa-shield"></i> </span>
-				<h4><a href="#">Contrary  belief</a></h4>
-				<p class="para">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+				<h4><a href="#">Important Links support</a></h4>
+				<p class="para">we support you by important links which you may need in the <br> future.</p>
+				<a href="branch/links" class="fa-btn btn-1 btn-1e">read more</a>
 			</div>	
 		</div>
 	</div>
@@ -171,12 +167,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="container">
 		<div class="main row">
 			<div class="col-md-6 content_left">
-				<img src="images/pic1.jpg" alt="" class="img-responsive">
+				<img src="images/pic1.jpg" alt="" class="img-responsive" >
 			</div>
 			<div class="col-md-6 content_right">
-				<h4>Lorem Ipsum is simply <span>dummy text of the ornare  </span> vulputate printing and  There are many variations of passages.</h4>
-				<p class="para">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words. </p>
-				<a href="single-page.html" class="fa-btn btn-1 btn-1e">read more</a>
+				<br><br><br><br> <h2>Who are we ?!</h2>
+				<p class="para">
+USQC is the leader organization providing training, consultative services, and third-party certifications and audits.
+In many industries we are the experts you need (i.e. Oil & Gas - Maritime & shipping - Health care... etc.)
+We create the specially tailored system to fit your business.
+the training requirement as per highest standards, comply with American and international standards.</p>
+	
 			</div>
 		</div>
 				<!----start-img-cursual---->
@@ -186,9 +186,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<img class="lazyOwl" data-src="images/c1.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">vehicula diam</a></h4>
+								<h4><a href="branch/cons">CONSULTATION</a></h4>
 								<p>
-									Lorem ipsum dolor amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt dolore magna aliqua.
+									We create the specially tailored system to fit your business.
 								</p>
 							</div>
 						</div>
@@ -197,9 +197,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<img class="lazyOwl" data-src="images/c2.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">Morbi nunc</a></h4>
+								<h4><a href="branch/training">TRAINING</a></h4>
 								<p>
-									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+									We offer a wide variety of training services. Just tell us the requirement and we'll take care of you. 
 								</p>
 							</div>
 						</div>
@@ -208,9 +208,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<img class="lazyOwl" data-src="images/c3.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">Lorem ipsum</a></h4>
+								<h4><a href="branch/offers">Special Offers</a></h4>
 								<p>
-									On the other hand, we denounce with righteous indignation and dislike men who are so beguiled  pleasure of the moment,
+									visit our offers page for the latest offers.
 								</p>
 							</div>
 						</div>
@@ -219,53 +219,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<img class="lazyOwl" data-src="images/c4.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">Sed faucibus</a></h4>
+								<h4><a href="branch/news">Safety & Quality News</a></h4>
 								<p>
-									Lorem ipsum dolor amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt dolore magna aliqua.
+									Know the latest news of safety and quality
 								</p>
 							</div>
 						</div>
-						<div class="item">
-							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c2.jpg" alt="Lazy Owl Image">
-							</div>
-							<div class="cau_left">
-								<h4><a href="#">Lorem ipsum</a></h4>
-								<p>
-									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-								</p>
-							</div>
-						</div>
-						<div class="item">
-							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c3.jpg" alt="Lazy Owl Image">
-							</div>
-							<div class="cau_left">
-								<h4><a href="#">Lorem ipsum</a></h4>
-								<p>
-									On the other hand, we denounce with righteous indignation and dislike men who are so beguiled  pleasure of the moment,
-								</p>
-							</div>
-						</div>
-						<div class="item">
-							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c4.jpg" alt="Lazy Owl Image">
-							</div>
-							<div class="cau_left">
-								<h4><a href="#">vehicula diam</a></h4>
-								<p>
-									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-								</p>
-							</div>
-						</div>
+						
 						<div class="item">
 							<div class="cau_left">
 								<img class="lazyOwl" data-src="images/c1.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">Lorem ipsum</a></h4>
+								<h4><a href="branch/cons">CONSULTATION</a></h4>
 								<p>
-									On the other hand, we denounce with righteous indignation and dislike men who are so beguiled  pleasure of the moment,
+									We create the specially tailored system to fit your business.
 								</p>
 							</div>
 						</div>
@@ -274,9 +242,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<img class="lazyOwl" data-src="images/c2.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">Lorem ipsum</a></h4>
+								<h4><a href="branch/training">TRAINING</a></h4>
 								<p>
-									Lorem ipsum dolor amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt dolore magna aliqua.
+									We offer a wide variety of training services. Just tell us the requirement and we'll take care of you. 
 								</p>
 							</div>
 						</div>
@@ -285,20 +253,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<img class="lazyOwl" data-src="images/c3.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">vehicula diam</a></h4>
+								<h4><a href="branch/offers">Special Offers</a></h4>
 								<p>
-									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-								</p>
-							</div>
-						</div>
-						<div class="item">
-							<div class="cau_left">
-								<img class="lazyOwl" data-src="images/c1.jpg" alt="Lazy Owl Image">
-							</div>
-							<div class="cau_left">
-								<h4><a href="#">Lorem ipsum</a></h4>
-								<p>
-									On the other hand, we denounce with righteous indignation and dislike men who are so beguiled  pleasure of the moment,
+									visit our offers page for the latest offers.
 								</p>
 							</div>
 						</div>
@@ -307,12 +264,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<img class="lazyOwl" data-src="images/c4.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="#">Morbi nunc</a></h4>
+								<h4><a href="branch/news">Safety & Quality News</a></h4>
 								<p>
-									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+									Know the latest news of safety and quality
 								</p>
 							</div>
 						</div>
+						
+						
+					
 					</div>
 					<!----//End-img-cursual---->
 	</div>

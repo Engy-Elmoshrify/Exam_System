@@ -56,7 +56,7 @@ echo '<h2>'.$exams_item['Exam_Name'].'</h2>';
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="<?php echo site_url('/'); ?>">Home</a></li>
-            <li class="active"><a href="technology.html">Technologies</a></li>
+            <li class="active"><a href="technology.html">Exams</a></li>
             <li><a href=<?php echo site_url('about.html'); ?>>About</a></li>
             <li><a href=<?php echo site_url('blog.html'); ?>>Blog</a></li>
       
@@ -113,13 +113,34 @@ echo $question_item['Q_Name'];
 
 <p> </p>
 
+
+<?php  if ( isset($first) and $first== 0 ) {  ?>
 <div class="btn-group-vertical pull-left">
 <a class="btn btn-primary" id= "previous"  href="<?php echo site_url('exam/previousQuestion/'.$exams_item['Exam_Id'].'/'.$question_item['Q_Id']); ?>">Previous</a> 
-
 </div>
+<?php 
+}
+?>
+
+<?php  if ( !isset($last) or $last== 0 ) {  ?>
 <div class="btn-group-vertical pull-right">
 <a class="btn btn-primary" id= "next" href="<?php echo site_url('exam/nextQuestion/'.$exams_item['Exam_Id'].'/'.$question_item['Q_Id']);?>">Next</a> 
 </div>
+
+
+<?php 
+}
+if (isset($last) and $last == 1 )  
+{
+?>
+<div class="btn-group-vertical pull-right">
+<a class="btn btn-success" id= "next" href="<?php echo site_url('exam/getScore/'.$exams_item['Exam_Id']);?>">Finish</a> 
+</div>
+
+<?php
+
+}
+?>
 
 </div>
 </div>
@@ -162,6 +183,11 @@ echo $question_item['Q_Name'];
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script>
 // window.onbeforeunload = function() { return "You answers may be lost."; };
+
+history.pushState(null, null, document.URL);
+window.addEventListener('popstate', function () {
+    history.pushState(null, null, document.URL);
+});
 
 $(document).ready(function() {
   $("#c_v").val("<?php
