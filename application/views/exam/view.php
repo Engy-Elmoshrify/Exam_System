@@ -82,7 +82,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <?php
 			echo '<h2>'.$exams_item['Exam_Name'].'</h2>';
 			echo '<h2>'.$exams_item['Exam_Desc'].'</h2>';?>
-    
    
    <table id = "exam_tb" class="table table-striped table-bordered" border='1' cellpadding='0'>
     <tr>
@@ -121,6 +120,5 @@ $(document).ready(function() {
 } );
 
 </script>
-
 </body>
 </html>

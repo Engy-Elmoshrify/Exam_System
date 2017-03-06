@@ -83,7 +83,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <h2>our Exams</h2>
  
 <?php echo validation_errors(); ?>
- 
 <?php echo form_open('user/edit/'.$users_item['User_Id'],array('class' => 'form-inline')); ?>
     <table>
         <tr>
@@ -93,6 +92,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <tr>
             <td><label for="User_Mail">Email-Address</label></td>
             <td><input class="form-control" type="input" name="User_Mail" size="50" value="<?php echo $users_item['User_Mail'] ?>" /></td>
+
         </tr>
       
         <tr>
@@ -102,7 +102,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </table>
 </form> 
     
-   
     </div>
   </div>
 </div><!-- end main -->

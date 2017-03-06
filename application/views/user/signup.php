@@ -33,7 +33,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="logo navbar-left">
       <h1><a href="index.html">Learner </a></h1>
     </div>
-    
     <div class="clearfix"></div>
   </div>
   <div class="row h_menu">
@@ -50,6 +49,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
+
             <li><a href="<?php echo site_url('/'); ?>">Home</a></li>
             <li><a href="technology.html">Technologies</a></li>
             <li><a href=<?php echo site_url('about.html'); ?>>About</a></li>     
@@ -58,6 +58,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <li class="active"><a href=<?php echo site_url('User/signup'); ?>>Sign Up</a></li>
           </ul>
         </div>
+
         <!-- start soc_icons -->
     </nav>
     <div class="soc_icons navbar-right">
@@ -82,6 +83,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
  
 <?php echo validation_errors(); ?>
  
+
 <?php echo form_open('user/create',array('class' => 'form-inline')); ?>    
     <table>
        <div class="form-group">
@@ -110,13 +112,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </table>    
 </form>
+
   </div>
 </div><!-- end main -->
 <div class="footer_bg"><!-- start footer -->
   <div class="container">
     <div class="row  footer">
       <div class="copy text-center">
+
         <p class="link"><span>&#169; All rights reserved | Design by</span></p>
+
       </div>
     </div>
   </div>

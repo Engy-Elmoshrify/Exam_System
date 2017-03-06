@@ -1,7 +1,3 @@
-
-
-
-
 <!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -102,7 +98,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    </form>
  </body>
 </html>   
-       
     </div>
   </div>
 </div><!-- end main -->

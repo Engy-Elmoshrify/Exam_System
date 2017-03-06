@@ -110,6 +110,7 @@ class Exam extends CI_Controller {
 
     public function viewExamQusetions($Eid)
     {
+
         $data['q_count'] = $this->exam_model->count_qustion_of_exam($Eid);
         //print_r($data['q_count'] ); 
         //echo $data['q_count']['counter']; exit;
@@ -131,7 +132,6 @@ class Exam extends CI_Controller {
     }
 
     public function nextQuestion($Eid,$Qid,$Aid){
-
         $data['q_count'] = $this->exam_model->count_qustion_of_exam($Eid);
         $data['exams_item'] = $this->exam_model->get_exams($Eid);
         
@@ -143,7 +143,35 @@ class Exam extends CI_Controller {
         $data['title'] = $data['exams_item']['Exam_Name'];
         $this->load->model('question_model');
         $data['question_item'] =  $this->question_model->get_next_question($Qid,$Eid);
-         $this->load->model('Score_model');
+      
+       $data['next_ques'] =  $this->question_model->get_next_question($data['question_item']['Q_Id'],$Eid);
+        
+
+        if (isset($data['next_ques']))
+        {
+            $data['last'] = 0;
+
+        }
+        else 
+        {
+            $data['last']  = 1; 
+        }
+    
+
+       $data['prev_ques'] =  $this->question_model->get_previous_question($data['question_item']['Q_Id'],$Eid);
+        
+
+        if (isset($data['prev_ques']))
+        {
+            $data['first'] = 0;
+
+        }
+        else 
+        {
+            $data['first']  = 1; 
+        }
+
+        $this->load->model('Score_model');
         $data['scores_item'] =$this->Score_model->set_scores('1',$Qid,$Aid);
         // get selected value :
         $data['CHOOSEN_ANSWER_ID'] =$this->Score_model->get_scores_by_question('1',$data['question_item']['Q_Id']);
@@ -165,8 +193,18 @@ class Exam extends CI_Controller {
         $data['title'] = $data['exams_item']['Exam_Name'];
         $this->load->model('question_model');
         $data['question_item'] =  $this->question_model->get_previous_question($Qid,$Eid);
-        // get selected value :
+        $data['prev_ques'] =  $this->question_model->get_previous_question($data['question_item']['Q_Id'],$Eid);
         
+
+        if (isset($data['prev_ques']))
+        {
+            $data['first'] = 0;
+
+        }
+        else 
+        {
+            $data['first']  = 1; 
+        }
         $this->load->model('Score_model');
         $data['scores_item'] =$this->Score_model->set_scores('1',$Qid,$Aid);
         $data['CHOOSEN_ANSWER_ID'] =$this->Score_model->get_scores_by_question('1',$data['question_item']['Q_Id']);
@@ -198,12 +236,6 @@ class Exam extends CI_Controller {
         }
         else
         {
-
-           /* if(!isset($_POST['correct_1']))  $_POST['correct_1'] = 'false';
-            if(!isset($_POST['correct_2']))  $_POST['correct_2'] = 'false';
-            if(!isset($_POST['correct_3']))  $_POST['correct_3'] = 'false';
-            if(!isset($_POST['correct_4']))  $_POST['correct_4'] = 'false';*/
-
             $this->load->model('question_model');
             $Qid = $this->question_model->set_question_for_exam($Eid);
             $this->load->model('answer_model');
@@ -277,5 +309,6 @@ class Exam extends CI_Controller {
         $this->load->view('exam/viewExamQusetions', $data);
         // $this->load->view('templates/footer');
     }
+
 
 }

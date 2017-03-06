@@ -28,7 +28,6 @@ class Answer extends CI_Controller {
         }
  
         $data['title'] = $data['answers_item']['A_Name'];
- 
         //$this->load->view('templates/header', $data);
         $this->load->view('answer/view', $data);
         //$this->load->view('templates/footer');

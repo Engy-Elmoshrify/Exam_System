@@ -33,6 +33,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="logo navbar-left">
       <h1><a href="index.html">Learner </a></h1>
     </div>
+
     <div class="clearfix"></div>
   </div>
   <div class="row h_menu">
@@ -90,8 +91,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <input class="form-control" type="input" name="User_Mail" size="50" value="<?php echo $users_item['User_Mail'] ?>" readonly/>
 </div>
 </form>
-
-
     </div>
   </div>
 </div><!-- end main -->
@@ -99,7 +98,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <div class="container">
     <div class="row  footer">
       <div class="copy text-center">
+
         <p class="link"><span>&#169; All rights reserved | Design by&nbsp;</span></p>
+
       </div>
     </div>
   </div>

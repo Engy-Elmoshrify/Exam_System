@@ -39,6 +39,7 @@ class Answer_model extends CI_Model {
         $data = array(
             'A_Name' => $this->input->post('A_Name'),
             'A_Correct' => $this->input->post('A_Correct'),
+
         );
         
         if ($id == 0) {
@@ -62,7 +63,8 @@ class Answer_model extends CI_Model {
         return $query->result_array();
     }
 
-     public function set_answers_for_question($Qid,$Aname,$correctAname,$Aid = 0)
+    public function set_answers_for_question($Qid,$Aname,$correctAname,$Aid = 0)
+
     {
         $this->load->helper('url');
 
@@ -70,6 +72,7 @@ class Answer_model extends CI_Model {
             'Q_id' => $Qid,
             'A_Name' => $Aname,
             "A_Correct" =>$correctAname,
+
         );
  
         
@@ -80,8 +83,7 @@ class Answer_model extends CI_Model {
             return $this->db->update('Answer', $data);
         }
     }
-
-        public function get_answers_by_Qid($id = FALSE)
+    public function get_answers_by_Qid($id = FALSE)
     {
         if ($id === FALSE)
         {

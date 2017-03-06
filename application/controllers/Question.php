@@ -25,6 +25,7 @@ class Question extends CI_Controller {
         {
             show_404();
         }
+
         $this->load->model('answer_model');
         $data['answers'] = $this->answer_model->get_answers_by_Qid($id);
        // print_r($data['answers'] );  exit;

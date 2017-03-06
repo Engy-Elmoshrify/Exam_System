@@ -78,7 +78,6 @@ class User extends CI_Controller {
         
         $this->form_validation->set_rules('User_Name', 'User_Name', 'required');
         $this->form_validation->set_rules('User_Mail', 'User_Mail', 'required');
-
  
         if ($this->form_validation->run() === FALSE)
         {
@@ -138,6 +137,7 @@ class User extends CI_Controller {
         }
     }
 
+
     public function verify(){
         $this->load->helper('form');
         $this->load->helper('url');
@@ -163,6 +163,5 @@ class User extends CI_Controller {
 
 
     }
-
     
 }

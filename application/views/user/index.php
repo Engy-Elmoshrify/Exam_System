@@ -54,9 +54,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="technology.html">Technologies</a></li>
+            <li><a href="technology.html">ُExams</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
             <li class="active"><a href="user.html">Users</a></li>
             <li><a href="login-template.html">Login</a></li>
             <li><a href="signup-template.html">Sign Up</a></li>
@@ -83,11 +82,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       <h2>our Exams</h2>
  
 
-<table id = "exam_tb" class="table table-striped table-bordered" border='1' cellpadding='0'>
+
+<table  id = "exam_tb" class="table table-striped table-bordered" border='1' cellpadding='0'>
+   <thead>
     <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Action</strong></td>
+        <th><strong>Name</strong></th>
+        <th><strong>Action</strong></th>
     </tr>
+  </thead>
+  <tbody>
 <?php foreach ($users as $users_item): ?>
         <tr>
             <td><?php echo $users_item['User_Name']; ?></td>
@@ -98,7 +101,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </td>
         </tr>
 <?php endforeach; ?>
+
+</tbody>
 </table>   
+    
 
     </div>
   </div>
@@ -107,16 +113,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <div class="container">
     <div class="row  footer">
       <div class="copy text-center">
+
         <p class="link"><span>&#169; All rights reserved | Design by&nbsp;</span></p>
+
       </div>
     </div>
   </div>
 </div>
+<script src="//code.jquery.com/jquery-1.12.4.js"  type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"  type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"  type="text/javascript"></script>
 <script type="text/javascript">
 $(document).ready(function() {
     $('#exam_tb').DataTable();
 } );
-
 </script>
 </body>
 </html>

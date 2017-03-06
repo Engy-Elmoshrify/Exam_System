@@ -75,11 +75,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <div class="container">
     <div class="technology row">
       <h2>our Exams</h2>
-
 <h2><?php echo $title; ?></h2>
  
 <?php echo validation_errors(); ?>
- 
 <?php echo form_open('question/edit/'.$questions_item['Q_Id'],array('class' => 'form-inline')); ?>
     <table>
         <div class="form-group">
@@ -110,3 +108,4 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 </body>
 </html>
+

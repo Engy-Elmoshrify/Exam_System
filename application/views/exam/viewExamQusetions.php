@@ -98,15 +98,35 @@ echo '<h2>'.$exams_item['Exam_Name'].'</h2>';
 ?>
 </select>
 
-<p> </p>
-
+<?php  if ( isset($first) and $first== 0 ) {  ?>
 <div class="btn-group-vertical pull-left">
 <a class="btn btn-primary" id= "previous"  href="<?php echo site_url('exam/previousQuestion/'.$exams_item['Exam_Id'].'/'.$question_item['Q_Id']); ?>">Previous</a> 
-
 </div>
+<?php 
+}
+?>
+
+<?php  if ( !isset($last) or $last== 0 ) {  ?>
 <div class="btn-group-vertical pull-right">
 <a class="btn btn-primary" id= "next" href="<?php echo site_url('exam/nextQuestion/'.$exams_item['Exam_Id'].'/'.$question_item['Q_Id']);?>">Next</a> 
 </div>
+
+
+<?php 
+}
+if (isset($last) and $last == 1 )  
+{
+?>
+<div class="btn-group-vertical pull-right">
+<a class="btn btn-success" id= "next" href="<?php echo site_url('exam/getScore/'.$exams_item['Exam_Id']);?>">Finish</a> 
+</div>
+
+<?php
+
+}
+?>
+
+
 <center>
      <ul class="pagination">
         
@@ -122,7 +142,7 @@ echo '<h2>'.$exams_item['Exam_Name'].'</h2>';
                 ?>
 
       </ul>
-</center>      
+</center> 
 
 </div>
 </div>
@@ -165,6 +185,11 @@ echo '<h2>'.$exams_item['Exam_Name'].'</h2>';
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script>
 // window.onbeforeunload = function() { return "You answers may be lost."; };
+
+history.pushState(null, null, document.URL);
+window.addEventListener('popstate', function () {
+    history.pushState(null, null, document.URL);
+});
 
 $(document).ready(function() {
   $("#c_v").val("<?php

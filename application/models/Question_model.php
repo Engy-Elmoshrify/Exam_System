@@ -69,9 +69,13 @@ class Question_model extends CI_Model {
         
 
          $this->db->order_by('Q_Id', 'asc');
+
+        try {
          $this->db->where("(Q_Id > " . $Qid . " and Exam_Id = " . $Eid . ") ");
+         
          $query =$this->db->get('Question',1);
-   
+        }catch(exception $e){}
+
        
          return $query->row_array();
 
@@ -82,9 +86,12 @@ class Question_model extends CI_Model {
         
 
         $this->db->order_by('Q_Id', 'desc');
+
+        try
+        {
          $this->db->where("(Q_Id < " . $Qid . " and Exam_Id = " . $Eid . ") ");
          $query =$this->db->get('Question',1);
-   
+        }catch(exception $e){}
        
          return $query->row_array();
 
@@ -138,4 +145,5 @@ class Question_model extends CI_Model {
         $query = $this->db->get_where('Question', array('Exam_Id' => $id));
         return $query->row_array();
     }
+
 }
